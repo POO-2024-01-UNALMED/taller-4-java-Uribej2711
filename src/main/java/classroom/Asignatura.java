@@ -23,6 +23,10 @@ public class Asignatura {
         this(nombre, 0, 0, tipo);
     }
 
+    public Asignatura(String nombre, int codigoExterno, Tipo tipo) {
+        this(nombre, 0, codigoExterno, tipo);
+    }
+
     public Asignatura(String nombre, int codigoInterno, int codigoExterno, Tipo tipo) {
         this.nombre = nombre;
         this.codigoInterno = codigoInterno;
@@ -42,4 +46,5 @@ public class Asignatura {
         this.codigoInterno = (int) codigoInterno;
     }
 }
+
 
