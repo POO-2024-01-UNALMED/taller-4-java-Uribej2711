@@ -25,6 +25,8 @@ public class Grupo {
         this.estudiantes = estudiantes;
         this.profesor = profesor;
         this.asignatura = asignatura;
+        this.codigo = 0;  // Se asigna un valor por defecto
+        this.horario = "";  // Se asigna un valor por defecto
     }
 
     void cambiarEstudiante(int indice, Persona estudiante) {
@@ -40,3 +42,4 @@ public class Grupo {
         }
     }
 }
+

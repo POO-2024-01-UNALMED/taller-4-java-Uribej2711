@@ -15,16 +15,15 @@ public class Asignatura {
         this("Sin nombre", codigoInterno, 0, tipo);
     }
 
-    public Asignatura(int codigoExternoNuevo, Tipo tipoNuevo) {  // Renombrado el constructor
-        this("Sin nombre", 0, codigoExternoNuevo, tipoNuevo);
-    }
-
     public Asignatura(String nombre, Tipo tipo) {
         this(nombre, 0, 0, tipo);
     }
 
-    public Asignatura(String nombre, int codigoExterno, Tipo tipo) {
-        this(nombre, 0, codigoExterno, tipo);
+    public Asignatura(String nombre, int codigoExternoNuevo, Tipo tipoNuevo) {
+        this.nombre = nombre;
+        this.codigoInterno = 0;
+        this.codigoExterno = codigoExternoNuevo;
+        this.tipo = tipoNuevo;
     }
 
     public Asignatura(String nombre, int codigoInterno, int codigoExterno, Tipo tipo) {
@@ -46,6 +45,7 @@ public class Asignatura {
         this.codigoInterno = (int) codigoInterno;
     }
 }
+
 
 
 
